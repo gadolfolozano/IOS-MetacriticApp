@@ -15,6 +15,14 @@
 		761FCCE72970F826000C46E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FCCBC2970F822000C46E8 /* ContentView.swift */; };
 		761FCCE82970F826000C46E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761FCCBD2970F826000C46E8 /* Assets.xcassets */; };
 		761FCCE92970F826000C46E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761FCCBD2970F826000C46E8 /* Assets.xcassets */; };
+		7685B5DF2973140800313547 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7685B5DE2973140800313547 /* landmarkData.json */; };
+		7685B5E12973143E00313547 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685B5E02973143E00313547 /* Landmark.swift */; };
+		7685B5E529732D7D00313547 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685B5E429732D7D00313547 /* ModelData.swift */; };
+		7685B5EA2973338A00313547 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685B5E92973338A00313547 /* LandmarkRow.swift */; };
+		7685B5EC297337A600313547 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685B5EB297337A600313547 /* LandmarkList.swift */; };
+		7685B5EE29737BA000313547 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685B5ED29737BA000313547 /* LandmarkDetail.swift */; };
+		7685B5F029737C1A00313547 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685B5EF29737C1A00313547 /* MapView.swift */; };
+		7685B5F229737C5700313547 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685B5F129737C5700313547 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		761FCCDD2970F826000C46E8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761FCCE12970F826000C46E8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		761FCCE32970F826000C46E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7685B5DE2973140800313547 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		7685B5E02973143E00313547 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		7685B5E429732D7D00313547 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		7685B5E92973338A00313547 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		7685B5EB297337A600313547 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		7685B5ED29737BA000313547 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		7685B5EF29737C1A00313547 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7685B5F129737C5700313547 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +114,11 @@
 		761FCCBA2970F822000C46E8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7685B5E82973337500313547 /* Views */,
 				761FCCBB2970F822000C46E8 /* Metacritic_AppApp.swift */,
+				7685B5E7297330EE00313547 /* Resources */,
 				761FCCBC2970F822000C46E8 /* ContentView.swift */,
+				7685B5E6297330B500313547 /* Model */,
 				761FCCBD2970F826000C46E8 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -149,6 +168,35 @@
 				761FCCE32970F826000C46E8 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		7685B5E6297330B500313547 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7685B5E429732D7D00313547 /* ModelData.swift */,
+				7685B5E02973143E00313547 /* Landmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7685B5E7297330EE00313547 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7685B5DE2973140800313547 /* landmarkData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7685B5E82973337500313547 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7685B5E92973338A00313547 /* LandmarkRow.swift */,
+				7685B5EB297337A600313547 /* LandmarkList.swift */,
+				7685B5ED29737BA000313547 /* LandmarkDetail.swift */,
+				7685B5EF29737C1A00313547 /* MapView.swift */,
+				7685B5F129737C5700313547 /* CircleImage.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				761FCCE82970F826000C46E8 /* Assets.xcassets in Resources */,
+				7685B5DF2973140800313547 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +358,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				761FCCE62970F826000C46E8 /* ContentView.swift in Sources */,
+				7685B5F029737C1A00313547 /* MapView.swift in Sources */,
+				7685B5EC297337A600313547 /* LandmarkList.swift in Sources */,
+				7685B5E529732D7D00313547 /* ModelData.swift in Sources */,
 				761FCCE42970F826000C46E8 /* Metacritic_AppApp.swift in Sources */,
+				7685B5F229737C5700313547 /* CircleImage.swift in Sources */,
+				7685B5EA2973338A00313547 /* LandmarkRow.swift in Sources */,
+				7685B5E12973143E00313547 /* Landmark.swift in Sources */,
+				7685B5EE29737BA000313547 /* LandmarkDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
