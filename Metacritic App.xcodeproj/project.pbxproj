@@ -30,6 +30,7 @@
 		7685B5EE29737BA000313547 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685B5ED29737BA000313547 /* LandmarkDetail.swift */; };
 		7685B5F029737C1A00313547 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685B5EF29737C1A00313547 /* MapView.swift */; };
 		7685B5F229737C5700313547 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685B5F129737C5700313547 /* CircleImage.swift */; };
+		76958AF02988A32C00468995 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76958AEF2988A32C00468995 /* ProfileEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		7685B5ED29737BA000313547 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		7685B5EF29737C1A00313547 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		7685B5F129737C5700313547 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		76958AEF2988A32C00468995 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				762B3B8E2984BBA1005A41CB /* CategoryItem.swift */,
 				762B3B942985FF07005A41CB /* ProfileHost.swift */,
 				762B3B962985FF4E005A41CB /* ProfileSummary.swift */,
+				76958AEF2988A32C00468995 /* ProfileEditor.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				762B3B872984A937005A41CB /* FavoriteButton.swift in Sources */,
 				762B3B8B2984B2EF005A41CB /* CategoryHome.swift in Sources */,
 				7685B5E529732D7D00313547 /* ModelData.swift in Sources */,
+				76958AF02988A32C00468995 /* ProfileEditor.swift in Sources */,
 				761FCCE42970F826000C46E8 /* Metacritic_AppApp.swift in Sources */,
 				762B3B9929860115005A41CB /* HikeBadge.swift in Sources */,
 				7685B5F229737C5700313547 /* CircleImage.swift in Sources */,
