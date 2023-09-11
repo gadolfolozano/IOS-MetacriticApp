@@ -8,7 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection: Tab = .featured
+    @StateObject var getTokenManager = GetTokenManager()
+    
+    @State private var isShowingDetailView = false
+    
+    var body: some View {
+        NavigationView {
+            ZStack {
+                
+                
+                /*NavigationLink(
+                    destination: Text("Second View"),
+                    isActive: $getTokenManager.gotToken,
+                    label: {
+                        EmptyView()
+                    }
+                )*/
+                if(getTokenManager.gotToken) {
+                    MainView()
+                } else {
+                    MainLoadingView()
+                }
+            }//.navigationTitle("Navigation")
+        }
+        .onAppear {
+            print("ContentView appeared!")
+            getTokenManager.getData()
+        }
+        .onDisappear {
+            print("ContentView disappeared!")
+        }
+        .environmentObject(getTokenManager)
+    }
+    
+    /*@State private var selection: Tab = .featured
     
     enum Tab {
         case featured
@@ -30,7 +63,7 @@ struct ContentView: View {
                 }
                 .tag(Tab.list)
         }
-    }
+    }*/
 }
 
 struct ContentView_Previews: PreviewProvider {

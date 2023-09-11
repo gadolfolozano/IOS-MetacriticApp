@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct Metacritic_AppApp: App {
-    @StateObject private var modelData = ModelData()
+    //@StateObject private var modelData = ModelData()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(modelData) //Here we are setting the real enviroment object
+                //.environmentObject(modelData) //Here we are setting the real enviroment object
         }
     }
 }
