@@ -14,7 +14,7 @@ struct MainView: View {
         List {
             
             ForEach(tokenManager.games) { game  in
-                Text(game.name)
+                GameRowItemView(game: game)
             }
             
         }

@@ -10,4 +10,5 @@ import Foundation
 struct GameModel: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
+    var summary: String
 }

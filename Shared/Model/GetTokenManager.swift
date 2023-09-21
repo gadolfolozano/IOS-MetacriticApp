@@ -94,7 +94,11 @@ class GetTokenManager : ObservableObject {
                     print(gamesResponse)
                     
                     self.games = gamesResponse.map { gameResponse in
-                        GameModel(id: gameResponse.id, name: gameResponse.name)
+                        GameModel(
+                            id: gameResponse.id,
+                            name: gameResponse.name,
+                            summary: gameResponse.summary ?? ""
+                        )
                     }
                 }
             } catch {
