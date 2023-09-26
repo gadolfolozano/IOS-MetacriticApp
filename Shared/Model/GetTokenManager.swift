@@ -91,7 +91,7 @@ class GetTokenManager : ObservableObject {
             do {
                 let gamesResponse = try JSONDecoder().decode(GamesResponse.self, from: data)
                 DispatchQueue.main.async {
-                    print(gamesResponse)
+                    //print(gamesResponse)
                     
                     self.games = gamesResponse.map { gameResponse in
                         GameModel(

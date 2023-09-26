@@ -15,27 +15,40 @@ struct GameRowItemView: View {
         HStack(alignment: .top) {
             Image("chincoteague")
                 .resizable()
-                .frame(width: 50, height: 70)
-                .padding(.top, 8)
+                .cornerRadius(8)
+                .frame(width: 80, height: 80)
+                .padding(.top, 6)
+                .padding(.leading, 6)
+            
             
             VStack(alignment: .leading) {
                 Text(game.name)
-                    .font(.title2)
+                    .font(Font.custom("Poppins-LightItalic", size: 18))
                     .lineLimit(1)
                     .padding(.bottom, 2)
                 Text(game.summary)
                     .font(.body)
                     .lineLimit(4)
             }
+            .padding(.leading, 6)
+            
+            Spacer()
         }
+        .padding(12)
+        .frame(maxWidth: .infinity)
+        .background(Color.white)
+        .cornerRadius(8)
+        .shadow(radius: 4, y: 4)
     }
     
 }
 
 struct GameRowItemViewPreviews: PreviewProvider {
     static var previews: some View {
+        
         GameRowItemView(
-            game: GameModel(id: 0, name: "Name", summary: "Summary \nmore content\nadditional")
-        ).previewLayout(.fixed(width: 600, height: 250))
+            game: GameModel(id: 2, name: "Name", summary: "Summary \nmore content\nadditional")
+        )
+        .previewLayout(.fixed(width: 600, height: 500))
     }
 }

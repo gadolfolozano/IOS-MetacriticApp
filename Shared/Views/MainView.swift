@@ -12,12 +12,12 @@ struct MainView: View {
     
     var body: some View {
         List {
-            
             ForEach(tokenManager.games) { game  in
                 GameRowItemView(game: game)
+                    .listRowSeparator(.hidden)
             }
-            
         }
+        .listStyle(InsetListStyle())
         .onAppear {
             print("MainView appear!")
             tokenManager.getMainGameList()
@@ -25,8 +25,8 @@ struct MainView: View {
     }
 }
 
-struct MainView_Previews: PreviewProvider {
+/*struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
     }
-}
+}*/
