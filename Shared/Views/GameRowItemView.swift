@@ -23,11 +23,13 @@ struct GameRowItemView: View {
             
             VStack(alignment: .leading) {
                 Text(game.name)
-                    .font(Font.custom("Poppins-LightItalic", size: 18))
+                    .foregroundStyle(Color("primaryTextColorBold"))
+                    .font(Font.custom("Poppins-Bold", size: 16))
                     .lineLimit(1)
                     .padding(.bottom, 2)
                 Text(game.summary)
-                    .font(.body)
+                    .font(Font.custom("Poppins-Regular", size: 12))
+                    .foregroundStyle(Color("primaryTextColorLight"))
                     .lineLimit(4)
             }
             .padding(.leading, 6)
