@@ -9,24 +9,30 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject var tokenManager: GetTokenManager
+    @State private var selection: Tab = .featured
+    
+    enum Tab {
+        case featured
+        case list
+    }
+    
     
     var body: some View {
-        List {
-            ForEach(tokenManager.games) { game  in
-                GameRowItemView(game: game)
-                    .listRowSeparator(.hidden)
-            }
-        }
-        .listStyle(InsetListStyle())
-        .onAppear {
+        TabView(selection: $selection) {
+            GameListView(games: tokenManager.games)
+                .tabItem {
+                    Label("Featured", systemImage: "star")
+                }
+                .tag(Tab.featured)
+            
+            Text("TODO")
+                .tabItem {
+                    Label("List", systemImage: "list.bullet")
+                }
+                .tag(Tab.list)
+        }.onAppear {
             print("MainView appear!")
             tokenManager.getMainGameList()
         }
     }
 }
-
-/*struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
-}*/

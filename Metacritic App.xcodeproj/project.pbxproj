@@ -14,6 +14,7 @@
 		761FCCE62970F826000C46E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761FCCBC2970F822000C46E8 /* ContentView.swift */; };
 		761FCCE82970F826000C46E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761FCCBD2970F826000C46E8 /* Assets.xcassets */; };
 		761FCCE92970F826000C46E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761FCCBD2970F826000C46E8 /* Assets.xcassets */; };
+		7624E2C72ACE481000B78749 /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7624E2C62ACE481000B78749 /* GameDetailView.swift */; };
 		762B3B872984A937005A41CB /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B3B862984A937005A41CB /* FavoriteButton.swift */; };
 		762B3B8B2984B2EF005A41CB /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B3B8A2984B2EF005A41CB /* CategoryHome.swift */; };
 		762B3B8D2984B8BB005A41CB /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B3B8C2984B8BB005A41CB /* CategoryRow.swift */; };
@@ -76,6 +77,7 @@
 		76EFFFCE2AC277CE005D5C71 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EFFFAB2AC277CE005D5C71 /* Poppins-Thin.ttf */; };
 		76EFFFCF2AC277CE005D5C71 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EFFFAC2AC277CE005D5C71 /* Poppins-Black.ttf */; };
 		76EFFFD02AC277CE005D5C71 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76EFFFAC2AC277CE005D5C71 /* Poppins-Black.ttf */; };
+		76EFFFD72AC3C541005D5C71 /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EFFFD62AC3C541005D5C71 /* GameListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,7 @@
 		761FCCDD2970F826000C46E8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761FCCE12970F826000C46E8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		761FCCE32970F826000C46E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7624E2C62ACE481000B78749 /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
 		762B3B862984A937005A41CB /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		762B3B8A2984B2EF005A41CB /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryHome.swift; path = Shared/Views/CategoryHome.swift; sourceTree = SOURCE_ROOT; };
 		762B3B8C2984B8BB005A41CB /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 		76EFFFAA2AC277CE005D5C71 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		76EFFFAB2AC277CE005D5C71 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		76EFFFAC2AC277CE005D5C71 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		76EFFFD62AC3C541005D5C71 /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +323,8 @@
 				762B3B892984AB9D005A41CB /* Helpers */,
 				764F53912AA5702C00FD4A5F /* MainLoadingView.swift */,
 				764F53952AB92E4B00FD4A5F /* GameRowItemView.swift */,
+				76EFFFD62AC3C541005D5C71 /* GameListView.swift */,
+				7624E2C62ACE481000B78749 /* GameDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -559,8 +565,10 @@
 				7685B5E529732D7D00313547 /* ModelData.swift in Sources */,
 				76958AF02988A32C00468995 /* ProfileEditor.swift in Sources */,
 				761FCCE42970F826000C46E8 /* Metacritic_AppApp.swift in Sources */,
+				7624E2C72ACE481000B78749 /* GameDetailView.swift in Sources */,
 				762B3B9929860115005A41CB /* HikeBadge.swift in Sources */,
 				7685B5F229737C5700313547 /* CircleImage.swift in Sources */,
+				76EFFFD72AC3C541005D5C71 /* GameListView.swift in Sources */,
 				764F538C2AA2C2C200FD4A5F /* Keys.swift in Sources */,
 				762B3B8F2984BBA1005A41CB /* CategoryItem.swift in Sources */,
 				7685B5EA2973338A00313547 /* LandmarkRow.swift in Sources */,
